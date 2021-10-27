@@ -7,7 +7,7 @@ pipeline {
     choice(name: "select_version", choices: ["1.1", "2.2", "4.0"], description: "test choice")
     password(name: "password", defaultValue: "", description: "test the password")
     file(name: "FILE", description: "test file")
-    credential(name:"creditial", description:"test credential")
+    credentials(name:"creditial", description:"test credential")
   }
   stages {
     stage("build") {

@@ -1,0 +1,8 @@
+pipeline {
+  agent any
+  stages {
+    stage("build") {
+      echo "stage1: build"
+    }
+  }
+}

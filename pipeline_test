@@ -1,5 +1,6 @@
 pipeline {
   agent any
+  options { timestamps() }
   parameters {
     string (name: "contents", defaultValue:"", description: "test the string")
     text(name: "descrp", defaultValue:"hello\nnew World", description: "test the text")

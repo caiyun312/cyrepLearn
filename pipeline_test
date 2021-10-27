@@ -3,7 +3,7 @@ pipeline {
   parameters {
     string (name: "contents", defaultValue:"", description: "test the string")
     text(name: "descrp", defaultValue:"hello\nnew World", description: "test the text")
-    boolParam(name: "Enable", defaultValue: true, description: "test the bool value")
+    booleanParam(name: "Enable", defaultValue: true, description: "test the bool value")
     choice(name: "select_version", choices: ["1.1", "2.2", "4.0"], description: "test choice")
     password(name: "password", defaultValue: "", description: "test the password")
     file(name: "FILE", description: "test file")

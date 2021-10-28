@@ -10,6 +10,10 @@ pipeline {
     file(name: "FILE", description: "test file")
     credentials(name:"creditial", description:"test credential")
   }
+ triggers{
+    gitlab( triggerOnPush: true, triggerOnMergeRequest: true, branchFilterType: 'All', secretToken: "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")
+}
+
   stages {
     stage("build") {
       steps {

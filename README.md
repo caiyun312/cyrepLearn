@@ -1,3 +1,3 @@
 # cyrepLearn
 for jenkins operation
-test for trigger
+test for auto-trigger
